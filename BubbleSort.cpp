@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// Function to perform bubble sort
+
 void bubbleSort(int arr[], int size) {
     for (int step = 0; step < size - 1; ++step) {
-        bool swapped = false; // Early exit optimization tracker
+        bool swapped = false;
         for (int i = 0; i < size - step - 1; ++i) {
             if (arr[i] > arr[i + 1]) {
                 swap(arr[i], arr[i + 1]);
                 swapped = true;
             }
         }
-        if (!swapped) break; // Exit if array is sorted
+        if (!swapped) break; 
     }
 }
 
